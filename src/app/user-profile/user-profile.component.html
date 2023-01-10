@@ -1,0 +1,17 @@
+<img [src]="user.photo" [alt]="" srcset="">
+
+
+<input [type]="user.quote">
+
+<h3 *ngIf="toto">{{user.age}}</h3>
+
+<p>Name : {{user.name}}</p> 
+<p> First name : {{user.firstName}}</p>
+<!-- <input type="hidden"> -->
+<!-- <button type="hidden" onclick="age()"></button> -->
+
+<!-- <button onclick=age.style.display = "none">Masquer l'âge</button> -->
+
+
+<!-- <button onclick="document.getElementById('age').style.visibility = hidden">Masquer l'âge</button> -->
+<button (click)="masquer()">masquer Age</button>
